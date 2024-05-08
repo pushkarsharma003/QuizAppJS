@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- main div starts here -->
+    <div class="main">
+      <!-- question div main starts here-->
+      <div class="ques-div-main">
+        <!-- question div starts here -->
+        <div class="ques-div">
+          <!-- <div class="quiz-subject-opt-div"></div> -->
+          <h1 class="logo">
+            HorseHire
+            <p>Online exam platform</p>
+          </h1>
+          <button class="start-quiz-btn">Start test</button>
+
+          <!-- timer div starts here -->
+          <div class="timer-div opacity-zero">
+            <h1>Time Left :</h1>
+            <div class="timer">
+              <div class="hour">00</div>
+              <p class="colons">:</p>
+              <div class="minute">00</div>
+              <p class="colons">:</p>
+              <div class="second">00</div>
+            </div>
+          </div>
+          <!-- timer div ends here -->
+
+          <!-- question row starts here -->
+          <div class="ques-row hidden">
+            <div class="ques-serial"></div>
+            <div class="ques"></div>
+            <div class="ques-opt-select">
+              <div>
+                <button class="opt-btn" id="opt-1"><p id="label-1"></p></button>
+              </div>
+              <div>
+                <button class="opt-btn" id="opt-2"><p id="label-2"></p></button>
+              </div>
+              <div>
+                <button class="opt-btn" id="opt-3"><p id="label-3"></p></button>
+              </div>
+              <div>
+                <button class="opt-btn" id="opt-4"><p id="label-4"></p></button>
+              </div>
+              <div class="prev-next-btn-div">
+                <button class="prev-ques disabled">Prev</button>
+                <button class="next-ques">Next</button>
+              </div>
+            </div>
+          </div>
+          <!-- question row ends here -->
+          <!-- end test div starts here -->
+          <div class="end-test hidden">
+            <p class="test-done-alert">
+              Test completed? Submit the test or go back
+            </p>
+            <button class="end-quiz-btn">Submit test</button>
+            <button class="end-back-btn">Back</button>
+          </div>
+          <!-- end test div ends here -->
+        </div>
+        <!-- question div ends here -->
+        <!-- question done status div starts here -->
+        <div class="ques-done-status-div hidden">
+          <h1>Attempt Status</h1>
+          <div class="instructions-div opacity-zero">
+            <table>
+              <th rowspan="0">Indications</th>
+              <tr>
+                <td><div class="ques-status-indic-na"></div></td>
+                <td><div>Not Attempted</div></td>
+              </tr>
+              <tr>
+                <td><div class="ques-status-indic-cur"></div></td>
+                <td><div>Current</div></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ques-status-indic-a"></div>
+                </td>
+                <td><p>Attempted</p></td>
+              </tr>
+              <tr>
+                <td><div class="ques-status-indic-nv"></div></td>
+                <td><p>Not Visited</p></td>
+              </tr>
+            </table>
+          </div>
+          <div class="ques-done-status"></div>
+        </div>
+        <!-- question done status div ends here -->
+      </div>
+      <!-- question div ends here -->
+
+      <!-- footer div starts here -->
+      <div class="footer-div">
+        <div class="result-div hidden"></div>
+      </div>
+      <!-- footer div ends here -->
+    </div>
+    <!-- main div ends here -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
